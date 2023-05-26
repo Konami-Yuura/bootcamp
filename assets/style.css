@@ -1,0 +1,157 @@
+/* * {
+    border: solid thin black;
+    background-color: aquamarine;
+} */
+
+body {
+    background-color: azure;
+    margin: 0;
+}
+
+/*.green {
+    color: green;
+    font-weight: lighter;
+} */
+
+h2.green {
+    color: green;
+    font-weight: lighter;
+}
+
+h2 {
+    color: blue;
+}
+
+
+#first-paragraph {
+    font-size: 12;
+}
+
+#second-paragraph {
+    color: rgb(199, 32, 171);
+    background-color: rgb(44, 169, 201);
+    opacity: 0.5;
+    color: #0096FF55;
+}
+
+#typography {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: oblique;
+    text-transform: capitalize;
+    text-decoration: line-through;
+    text-align: left;
+    text-shadow: 1px 2px 2px #0096FF;
+    text-indent: 20%;
+    letter-spacing: 2;
+    word-spacing: 5;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* div span ：parent-children */
+/* ol, ul : both */
+
+ol {
+    list-style-position: inside;
+    list-style-type: lower-alpha;
+
+    /* list-style: lower-alpha inside; */
+}
+
+ul {
+    list-style-type: square;
+}
+
+img#my-cat {
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#banner {
+    border: solid thin #000;
+    width: 800px;
+    height: 200px;
+    background-image: url('banner.jpg');
+    background-size: cover;
+}
+
+#banner-2 {
+    border: solid thin #0096FF;
+    height: 500px;
+    background-image: url('cat.png');
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+table#contacts {
+    empty-cells: hide;
+    border-collapse: separate;
+    border-spacing: 10px 15px;
+    /* if use collapse "spacing" dosen't work  */
+    background-color: #f97777;
+}
+
+table#contacts td,
+table#contacts th {
+    border: solid thin #fff; 
+}
+
+table#contacts th{
+    background-color: #000;
+    color: #fff;
+}
+
+div#box-model {
+    border: solid thin #000;
+    /* style weight color */
+    margin: 10px 20px 30px 40px;
+    /* 1-value:4 side  */
+    /* 2-value: top&bottom left&right */
+    /* 3-value: TOP left&right bottom */
+    /* 4-value: top right bottom left */
+    padding: 10px 20px 30px 40px;
+    box-shadow: -5px -5px 2px 2px #000;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+div#box-model-2 {
+    border: solid thin #000;
+    /* margin: 0 auto; */
+    border-radius: 4px;
+    /* dont put too much large number */
+    width: 300px;
+    height: 50px;
+    overflow: scroll;
+    box-shadow: 10px 15px 10px 5px red;
+    /* h-offset v-offset blur  spread color */
+    position: relative;
+    top: 50px;
+    left: 100px;
+    /* px & % */
+    /* relative: only use top&left right&bottom for more than two element */
+    /* absolute: directly to browse. use top&bottom&left&right */
+    /* fixed: follow the display. use top&bottom&left&right */
+    /* static: defolt you CAN'T use top&bottom&left&right */
+    z-index: 1;
+}
+
+div#float-left {
+    border: solid thin #000;
+    /* float: left; */
+    /* float propaty convert block element to inline element  */
+    display: inline;
+}
+
+span#inline {
+    border: solid thin #000;
+    display: block;
+}
